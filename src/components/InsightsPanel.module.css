@@ -1,0 +1,36 @@
+.panel {
+  padding: 18px 0 18px 0;
+  font-size: 1em;
+  color: var(--text-main);
+  background: transparent;
+  transition: color 0.2s, background 0.2s;
+}
+.section {
+  margin-bottom: 18px;
+}
+.summary {
+  background: var(--input-bg);
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-top: 4px;
+  font-size: 0.98em;
+  box-shadow: 0 1px 4px var(--shadow);
+  color: var(--text-main);
+}
+.keyPoints {
+  margin: 6px 0 0 18px;
+  padding: 0;
+  font-size: 0.97em;
+}
+.related {
+  margin: 6px 0 0 18px;
+  padding: 0;
+  font-size: 0.97em;
+}
+h3 {
+  margin-top: 0;
+  font-size: 1.15em;
+  color: var(--primary);
+  letter-spacing: 0.01em;
+  text-shadow: 0 2px 8px var(--shadow);
+} 

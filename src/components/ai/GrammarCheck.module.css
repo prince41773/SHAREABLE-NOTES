@@ -1,0 +1,38 @@
+.grammarContainer {
+  position: relative;
+}
+.grammarError {
+  border-bottom: 2px wavy var(--danger);
+  background: var(--grammar-bg, #fff0f3);
+  color: var(--grammar-text, var(--danger));
+  border-radius: 2px;
+  padding: 0 2px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  border: 1.5px solid var(--danger);
+}
+.popup {
+  position: absolute;
+  z-index: 100;
+  background: var(--bg-secondary);
+  color: var(--text-main);
+  border-radius: 7px;
+  box-shadow: 0 2px 12px var(--shadow-strong);
+  padding: 10px 16px;
+  font-size: 0.98em;
+  min-width: 120px;
+  max-width: 320px;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+}
+
+:root {
+  --grammar-bg: #fff0f3;
+  --grammar-text: #b91c1c;
+}
+
+[data-theme='dark'] {
+  --grammar-bg: #2d1a1e;
+  --grammar-text: #fb7185;
+} 

@@ -1,0 +1,91 @@
+.modalOverlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(37,99,235,0.13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal {
+  background: var(--bg-secondary);
+  padding: 36px 38px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-strong);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 280px;
+  align-items: center;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.input {
+  margin-top: 10px;
+  padding: 10px 14px;
+  border-radius: 7px;
+  border: 2px solid var(--border);
+  font-size: 1.08em;
+  width: 100%;
+  background: var(--input-bg);
+  color: var(--primary);
+  font-weight: 600;
+  box-shadow: 0 1px 4px var(--shadow);
+  transition: border 0.18s, box-shadow 0.18s, background 0.18s, color 0.18s;
+}
+.input:focus {
+  border: 2px solid var(--primary);
+  box-shadow: 0 2px 8px var(--shadow-strong);
+  background: var(--bg-panel);
+  color: var(--primary-light);
+}
+.buttonRow {
+  display: flex;
+  gap: 14px;
+  margin-top: 16px;
+}
+.submitBtn {
+  background: linear-gradient(90deg, #e3e9f3 0%, #b6c6e3 100%);
+  color: #22304a;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 36px;
+  min-width: 160px;
+  font-size: 1.13em;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(182, 198, 227, 0.13);
+  transition: background 0.22s, box-shadow 0.22s, transform 0.13s, color 0.18s;
+  letter-spacing: 0.01em;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: inline-block;
+}
+.submitBtn:hover, .submitBtn:focus {
+  background: linear-gradient(90deg, #b6c6e3 0%, #e3e9f3 100%);
+  color: #1741a6;
+  box-shadow: 0 6px 24px rgba(34, 48, 74, 0.13);
+  transform: translateY(-2px) scale(1.06);
+}
+.cancelBtn {
+  background: linear-gradient(90deg, #f3e3e3 0%, #e3b6b6 100%);
+  color: #4a2222;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 36px;
+  min-width: 120px;
+  font-size: 1.13em;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(227, 182, 182, 0.13);
+  transition: background 0.22s, box-shadow 0.22s, transform 0.13s, color 0.18s;
+  letter-spacing: 0.01em;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: inline-block;
+}
+.cancelBtn:hover, .cancelBtn:focus {
+  background: linear-gradient(90deg, #e3b6b6 0%, #f3e3e3 100%);
+  color: #a61741;
+  box-shadow: 0 6px 24px rgba(74, 34, 34, 0.13);
+  transform: translateY(-2px) scale(1.06);
+} 
